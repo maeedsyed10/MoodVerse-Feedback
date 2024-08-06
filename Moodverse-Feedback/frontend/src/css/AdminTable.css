@@ -1,0 +1,82 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .admin-table-container {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+  }
+  .moodverse-heading {
+    font-size: 2em;
+    background: linear-gradient(to right, rgb(247, 86, 113), blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+  }
+  .logo {
+    margin-left: 10px;
+    width: 45px;
+    height: 40px;
+  }
+ 
+  .admin-table-container2 {
+    overflow-x: auto; /* Allow horizontal scroll */
+  }
+  
+  .admin-table-container h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .admin-table-container2 table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-table-container2 th, .admin-table-container2 td {
+    border: 1px solid #000000; /* Border for cells */
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .admin-table-container2 th {
+    background-color: #f4f4f4;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .admin-table-container2 tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .admin-table-container2 tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .admin-table-container2 td {
+    word-wrap: break-word; /* Ensure long content wraps within cells */
+  }
+  
+  @media (max-width: 768px) {
+    .admin-table-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .admin-table-container2 th, .admin-table-container2 td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
